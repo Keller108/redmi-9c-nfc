@@ -73,9 +73,8 @@
 .redmi-9c-nfc__four-adv-col-wrapper {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(1fr, 175px));
-    flex-wrap: wrap;
-    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 10px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
@@ -201,7 +200,24 @@
     flex-direction: row;
 }
 
+@media (max-width: 680px) {
+    .redmi-9c-nfc__text-on-pic-type-right {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("images/redmi-9c-nfc__performance-image.jpg");
+        padding: 60px;
+    }
+    .redmi-9c-nfc__text-on-pic-type-right-col:first-of-type {
+        width: 0;
+    }
+    .redmi-9c-nfc__text-on-pic-type-right-col:last-of-type {
+        padding: 0;
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
+    .redmi-9c-nfc__text-on-pic-type-right {
+        padding: 0;
+    }
     .redmi-9c-nfc__header-section {
         padding: 30px;
     }
