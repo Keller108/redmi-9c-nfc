@@ -146,6 +146,15 @@
     box-sizing: border-box;
 }
 
+.redmi-9c-nfc__regural-image {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
 .redmi-9c-nfc__description-list {
     color: #242424 !important;
     list-style-type: none;
